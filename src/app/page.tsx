@@ -39,14 +39,14 @@ export default function Home() {
             profileUrl="/images/unicorn.png"
             name="You"
             message={["holy cow that looks so good!"]}
-            messageBgColor="bg-zinc-100"
+            messageBgColor="bg-blue-100"
             imagePosition="right"
           />
           <Message
             imageBgColor="bg-orange-400"
             profileUrl="/images/unicorn.png"
             message={["i'm actually looking to redesign my website right now. could you help me?"]}
-            messageBgColor="bg-zinc-100"
+            messageBgColor="bg-blue-100"
             imagePosition="right"
           />
           <Message
