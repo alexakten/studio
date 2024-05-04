@@ -59,7 +59,6 @@ const PhotoCollection: React.FC<PhotoCollectionProps> = ({
           layout="fill"
           objectFit="cover"
           priority
-          className={imagePosition === "right" ? "" : "scale-x-[-1]"}
         />
       </div>
       {/* Photo Collection */}

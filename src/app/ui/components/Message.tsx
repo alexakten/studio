@@ -5,7 +5,6 @@ interface MessageProps {
   profileUrl?: string;
   imageBgColor: string;
   name?: string;
-  date?: string;
   message: string[];
   imagePosition: "left" | "right";
   messageBgColor?: string; // New prop for background color of message wrapper
@@ -15,7 +14,6 @@ const Message: React.FC<MessageProps> = ({
   profileUrl,
   imageBgColor = "bg-zinc-200",
   name,
-  date,
   message,
   imagePosition,
   messageBgColor = "bg-zinc-200", // Default background color

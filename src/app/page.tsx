@@ -13,7 +13,6 @@ export default function Home() {
             profileUrl="/images/memoji.png"
             imageBgColor="bg-blue-600"
             name="Lovisa"
-            date="2 minutes ago"
             message={[
               "Hi there! I'm Lovisa, founder at Lycke.",
               "",
@@ -25,7 +24,6 @@ export default function Home() {
           <Message
             profileUrl="/images/memoji.png"
             imageBgColor="bg-blue-600"
-            date="2 minutes ago"
             message={["Here is some of our work:"]}
             messageBgColor="bg-zinc-100"
             imagePosition="left"
@@ -38,15 +36,15 @@ export default function Home() {
           />
           <Message
             imageBgColor="bg-orange-400"
+            profileUrl="/images/unicorn.png"
             name="You"
-            date="1 minute ago"
             message={["holy cow that looks so good!"]}
             messageBgColor="bg-zinc-100"
             imagePosition="right"
           />
           <Message
             imageBgColor="bg-orange-400"
-            date="1 minute ago"
+            profileUrl="/images/unicorn.png"
             message={["i'm actually looking to redesign my website right now. could you help me?"]}
             messageBgColor="bg-zinc-100"
             imagePosition="right"
@@ -55,7 +53,6 @@ export default function Home() {
             profileUrl="/images/memoji.png"
             imageBgColor="bg-blue-600"
             name="Lovisa"
-            date="2 minutes ago"
             message={["Sure! Let's schedule a call."]}
             messageBgColor="bg-zinc-100"
             imagePosition="left"
@@ -63,7 +60,6 @@ export default function Home() {
           <Message
             profileUrl="/images/memoji.png"
             imageBgColor="bg-blue-600"
-            date="2 minutes ago"
             message={["Email me at lovisa@lycke.studio 🌈"]}
             messageBgColor="bg-zinc-100"
             imagePosition="left"
