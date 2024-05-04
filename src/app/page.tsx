@@ -3,7 +3,7 @@ import PhotoCollection from "./ui/components/PhotoCollection";
 
 export default function Home() {
   return (
-    <main className="my-24 flex flex-col items-center bg-white px-4 leading-[1.5] tracking-[-0.015rem] text-neutral-900">
+    <main className="my-16 sm:my-24 flex flex-col items-center bg-white px-4 leading-[1.5] tracking-[-0.015rem] text-neutral-900">
       <header className="w-full max-w-xl font-medium leading-[1.2] ">
         <p className="">lycke.studio</p>
       </header>
