@@ -1,80 +1,76 @@
 import Message from "./ui/components/Message";
+import PhotoCollection from "./ui/components/PhotoCollection";
 
 export default function Home() {
   return (
     <main className="my-24 flex flex-col items-center bg-white px-4 leading-[1.5] tracking-[-0.015rem] text-neutral-900">
       <header className="w-full max-w-xl font-medium leading-[1.2] ">
-        <p className="">
-          lycke.studio
-        </p>
+        <p className="">lycke.studio</p>
       </header>
       <section className="mt-24 w-full max-w-xl font-medium ">
         <div className="flex flex-col gap-6">
           <Message
-            imageUrl="/images/darwin-profile.png"
+            profileUrl="/images/memoji.png"
             imageBgColor="bg-blue-600"
             name="Lovisa"
             date="2 minutes ago"
             message={[
-              "Hi there! I'm Lovisa, founder at Lycke. ",
+              "Hi there! I'm Lovisa, founder at Lycke.",
               "",
-              "I heard you're looking for a new website?"
+              "We're a fully remote web design studio.",
             ]}
             messageBgColor="bg-zinc-100"
             imagePosition="left"
           />
           <Message
-            imageUrl="/images/darwin-profile.png"
+            profileUrl="/images/memoji.png"
+            imageBgColor="bg-blue-600"
+            date="2 minutes ago"
+            message={["Here is some of our work:"]}
+            messageBgColor="bg-zinc-100"
+            imagePosition="left"
+          />
+          <PhotoCollection
+            profileUrl="/images/memoji.png"
+            imageUrl="/images/gryning.png"
+            imageBgColor="bg-blue-600"
+            imagePosition="left"
+          />
+          <Message
             imageBgColor="bg-orange-400"
             name="You"
             date="1 minute ago"
-            message={[
-              "yes i need a new website ASAP!!",
-            ]}
+            message={["holy cow that looks so good!"]}
             messageBgColor="bg-zinc-100"
             imagePosition="right"
           />
           <Message
-            imageUrl="/images/darwin-profile.png"
             imageBgColor="bg-orange-400"
-            name="You"
             date="1 minute ago"
-            message={[
-              "you do websites right?"
-            ]}
+            message={["i'm actually looking to redesign my website right now. could you help me?"]}
             messageBgColor="bg-zinc-100"
             imagePosition="right"
           />
           <Message
-            imageUrl="/images/darwin-profile.png"
+            profileUrl="/images/memoji.png"
             imageBgColor="bg-blue-600"
             name="Lovisa"
-            date="Just now"
-            message={[
-              "Yes! We're a web design agency. Rebranding is always included in our projects too!",
-              "",
-              ""
-            ]}
+            date="2 minutes ago"
+            message={["Sure! Let's schedule a call."]}
             messageBgColor="bg-zinc-100"
             imagePosition="left"
           />
           <Message
-            imageUrl="/images/darwin-profile.png"
-            imageBgColor="bg-orange-400"
-            name="You"
-            date="Just now"
-            message={[
-              "omg ur a lifesaver!!! thanks!",
-              "",
-              ""
-            ]}
+            profileUrl="/images/memoji.png"
+            imageBgColor="bg-blue-600"
+            date="2 minutes ago"
+            message={["Send me an email at lovisa@lycke.studio 🌈"]}
             messageBgColor="bg-zinc-100"
-            imagePosition="right"
+            imagePosition="left"
           />
+
         </div>
-
       </section>
-
     </main>
   );
 }
