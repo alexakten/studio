@@ -64,7 +64,7 @@ export default function Home() {
             profileUrl="/images/memoji.png"
             imageBgColor="bg-blue-600"
             date="2 minutes ago"
-            message={["Send me an email at lovisa@lycke.studio 🌈"]}
+            message={["Email me at lovisa@lycke.studio 🌈"]}
             messageBgColor="bg-zinc-100"
             imagePosition="left"
           />
