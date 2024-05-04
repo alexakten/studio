@@ -1,15 +1,14 @@
-"use client";
 import Image from "next/image";
 import React, { useState } from "react";
 import { animated, useSpring } from "@react-spring/web";
 import { useDrag } from "@use-gesture/react";
 import Link from "next/link";
 
-const photos = [
-  "/path/to/photo1.jpg",
-  "/path/to/photo2.jpg",
-  "/path/to/photo3.jpg",
-];
+// const photos = [
+//   "/path/to/photo1.jpg",
+//   "/path/to/photo2.jpg",
+//   "/path/to/photo3.jpg",
+// ];
 
 interface PhotoCollectionProps {
   profileUrl: string;
@@ -26,24 +25,24 @@ const PhotoCollection: React.FC<PhotoCollectionProps> = ({
   name,
   imagePosition,
 }) => {
-  const [index, setIndex] = useState(0);
-  const [{ x }, api] = useSpring(() => ({ x: 0 }));
+  // const [index, setIndex] = useState(0);
+  // const [{ x }, api] = useSpring(() => ({ x: 0 }));
 
-  const bind = useDrag(
-    ({ down, movement: [mx], direction: [xDir], distance, cancel }) => {
-      if (
-        down &&
-        typeof distance === "number" &&
-        distance > window.innerWidth / 2
-      ) {
-        cancel();
-        setIndex(
-          (prev) => (prev + (xDir > 0 ? -1 : 1) + photos.length) % photos.length
-        );
-      }
-      api.start({ x: down ? mx : 0 });
-    }
-  );
+  // const bind = useDrag(
+  //   ({ down, movement: [mx], direction: [xDir], distance, cancel }) => {
+  //     if (
+  //       down &&
+  //       typeof distance === "number" &&
+  //       distance > window.innerWidth / 2
+  //     ) {
+  //       cancel();
+  //       setIndex(
+  //         (prev) => (prev + (xDir > 0 ? -1 : 1) + photos.length) % photos.length
+  //       );
+  //     }
+  //     api.start({ x: down ? mx : 0 });
+  //   }
+  // );
 
   return (
     <div

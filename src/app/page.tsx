@@ -8,7 +8,7 @@ export default function Home() {
         <p className="">lycke.studio</p>
       </header>
       <section className="mt-24 w-full max-w-xl font-medium ">
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-4">
           <Message
             profileUrl="/images/memoji.png"
             imageBgColor="bg-blue-600"
@@ -64,7 +64,7 @@ export default function Home() {
             profileUrl="/images/memoji.png"
             imageBgColor="bg-blue-600"
             date="2 minutes ago"
-            message={["Email me at lovisa@lycke.studio 🌈"]}
+            message={["Email at lovisa@lycke.studio 🌈"]}
             messageBgColor="bg-zinc-100"
             imagePosition="left"
           />
